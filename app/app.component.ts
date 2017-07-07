@@ -19,7 +19,7 @@ import { Animal } from './animal.model';
 
 export class AppComponent {
   currentFocus: string = 'Zoo Animal Tracker';
-  selectedTask = null;
+  selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
     new Animal('Arctic Fox', 'Aspen', 6, 'salmon', 'Arctic Exhibit', 2, 'female', 'hair dryer', 'baths'),
@@ -27,14 +27,14 @@ export class AppComponent {
     new Animal('Elephant', 'Lola', 1, 'peanuts', 'Outdoor Exhibit', 2, 'female', 'painting and baths', 'loud noises')
   ];
 
-  // editAnimal(clickedAnimal) {
-  //   this.selectedAnimal = clickedAnimal;
-  //
-  // }
-  //
-  // finishedEditing() {
-  //   this.selectedAnimal = null;
-  // }
+  editAnimal(clickedAnimal) {
+    this.selectedAnimal = clickedAnimal;
+
+  }
+
+  finishedEditing() {
+    this.selectedAnimal = null;
+  }
 
   addAnimal(newAnimalFromChild: Animal) {
    this.masterAnimalList.push(newAnimalFromChild);

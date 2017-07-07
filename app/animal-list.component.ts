@@ -10,8 +10,8 @@ import { Animal } from './animal.model';
       <option value="oldAnimals" selected="selected">Animals over 2 Years Old</option>
     </select>
     <ul>
-      <li>
-        <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
+      <li (click)="isAge(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge">{{currentAnimal.animal}} {{currentAnimal.name}} {{currentAnimal.age}} {{currentAnimal.diet}} {{currentAnimal.location}} {{currentAnimal.caretakers}} {{currentAnimal.sex}} {{currentAnimal.likes}} {{currentAnimal.dislikes}}
+      <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
       </li>
     </ul>
   `
@@ -21,7 +21,7 @@ export class AnimalListComponent {
    @Input() childAnimalList: Animal[];
    @Output() clickSender = new EventEmitter();
 
-   filterByAge: number = 2;
+   filterByAge: string = "allAnimals";
 
   onChange(optionFromMenu) {
     this.filterByAge = optionFromMenu;
@@ -30,9 +30,9 @@ export class AnimalListComponent {
    editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
   }
-
-  toggleDone(clickedTask: Animal, setAge: number) {
-     clickedTask.age = setAge;
-   }
+  // 
+  // toggleDone(clickedTask: Animal, setAge: number) {
+  //    clickedTask.age = setAge;
+  //  }
 
 }

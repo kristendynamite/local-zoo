@@ -1,3 +1,26 @@
-// h1 {
-//   color: red;
-// }
+h1 {
+  color: red;
+}
+
+select {
+  border: 1px solid black;
+}
+
+button {
+  border: 1px solid orange;
+}
+
+.new-animal {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  label {
+    padding: 5px;
+  }
+  input {
+    padding: 5px;
+    border: 1px solid blue;
+    width: 50%;
+  }
+}

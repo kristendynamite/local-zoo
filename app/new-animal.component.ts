@@ -5,21 +5,29 @@ import { Animal } from './animal.model';
   selector: 'new-animal',
   template: `
     <h1>New Animal</h1>
-    <div>
-      <label>Enter Animal Details:</label>
+    <h2><label>Enter Animal Details:</label></h2>
+    <div class="new-animal">
+      <label>Animal:</label>
       <input #newAnimal>
+      <label>Name:</label>
       <input #newName>
-      <input #newAge>
+      <label>Age:</label>
+      <input type="number" #newAge>
+      <label>Diet:</label>
       <input #newDiet>
+      <label>Location:</label>
       <input #newLocation>
-      <input #newCaretakers>
+      <label>Caretakers:</label>
+      <input type="number" #newCaretakers>
+      <label>Sex:</label>
       <input #newSex>
+      <label>Likes:</label>
       <input #newLikes>
+      <label>Dislikes:</label>
       <input #newDislikes>
     </div>
     <div>
-    <div>
-       <button (click)="submitForm(newAnimal.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value); newAnimal.value='', newName.value='', newAge.value='', newDiet.value='', newLocation.value='', newCaretakers.value='', newSex.value='',newLikes.value='', newDislikes.value='';">Add</button>
+       <button (click)="submitForm(newAnimal.value, newName.value, newAge.value, newDiet.value, newLocation.value, newCaretakers.value, newSex.value, newLikes.value, newDislikes.value);">Add</button>
     </div>
 
   `
