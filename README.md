@@ -4,7 +4,7 @@
 
 ### Description
 
-This is an application that tracks animals at the local zoo. It allows users to add animals to the inventory, edit their details, view and filter the list of animals.
+This is an application that displays animals that live at Moana's Island zoo. It allows users to add animals to the inventory, edit their details, view and filter the list of animals.
 
 <img src="https://raw.githubusercontent.com/kristendynamite/local-zoo/master/img/df-screenshot.png">
 

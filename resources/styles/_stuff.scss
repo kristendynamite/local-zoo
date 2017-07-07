@@ -5,42 +5,65 @@ body {
 .header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  align-content: space-around;
-  align-items: center;
-
+  align-content: space-between;
+  align-items: flex-end;
+  background: white;
+  margin-bottom: 10px;
   width: 100%;
-  height: 250px;
-  background: linear-gradient(to bottom, turquoise, paleturquoise, skyblue);
+  height: 200px;
 
   img {
-    height: 200px;
+    height: 180px;
+  }
+
+  #heihei-img {
+    height: 100px;
+  }
+
+  #pua-img {
+    height: 100px;
   }
 
   h1 {
-    font-size: 60px;
     text-align: center;
+    font-family: 'Merienda One', cursive;
+    font-size: 65px;
+    background: linear-gradient(to bottom, darken(turquoise, 10%), turquoise, paleturquoise, skyblue, darkblue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
 }
 
-h1 {
-  color: black;
-  font-family: 'Merienda One', cursive;
+h2{
+  font-size: 2em;
 }
 
 select {
-  border: 1px solid black;
+  padding: 20px;
+}
+
+.animal-list {
+  background: beige;
+  border: 1px solid turquoise;
+  padding: 5px;
 }
 
 button {
-  border: 1px solid orange;
+  border: 1px solid transparent;
+  background: turquoise;
+  font-size: 1.5em;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 5px;
 }
 
 .new-animal {
   display: flex;
-  width: 90%;
-  flex-direction: column;
+  width: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   label {
     padding: 5px;
@@ -48,7 +71,8 @@ button {
   input {
     padding: 5px;
     border: 1px solid blue;
-    width: 50%;
+    width: 60%;
+    margin: 10px;
   }
 }
 
@@ -56,10 +80,14 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   li {
     list-style-type: none;
-    width: 100%;
-    border: 1px solid turquoise;
+    width: 30%;
     padding: 5px;
+    text-align: center;
+    background: paleturquoise;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }

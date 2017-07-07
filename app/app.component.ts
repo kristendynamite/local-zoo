@@ -4,9 +4,13 @@ import { Animal } from './animal.model';
 @Component({
   selector: 'app-root',
   template: `
-       <div class="container">
-      <h1>Animal Tracker</h1>
-
+    <div class="container">
+      <div class="header">
+        <img class="moana-img" src="/resources/images/Moana.png">
+        <h1>Moana's Animal Island</h1>
+        <img id="heihei-img" src="/resources/images/Heihei.png">
+        <img id="pua-img" src="/resources/images/Pua.png">
+      </div>
 
       <animal-list [childAnimalList]="masterAnimalList" (clickSender)="editAnimal($event)"></animal-list>
 
@@ -22,9 +26,9 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-    new Animal('Arctic Fox', 'Aspen', 6, 'salmon', 'Arctic Exhibit', 2, 'female', 'hair dryer', 'baths'),
-    new Animal('Cheetah', 'Chester', 5, 'grass and oxen', 'African Exhibit', 2, 'female', 'playing fetch', 'thunder'),
-    new Animal('Elephant', 'Lola', 1, 'peanuts', 'Outdoor Exhibit', 2, 'female', 'painting and baths', 'loud noises')
+    new Animal('Hei Hei', 'Rooster', 6, 'rocks', 'Canoe', 2, 'male', 'swallowing inedible objects', 'being lost at sea'),
+    new Animal('Pua', 'Pig', 2, 'carrots and apples', 'Farm', 2, 'male', 'coconut water and sailing', 'rough seas and being away from Moana'),
+    new Animal('Lola', 'Elephant', 1, 'peanuts', 'Exotic exhibit', 2, 'female', 'painting and baths', 'loud noises')
   ];
 
   editAnimal(clickedAnimal) {
