@@ -6,18 +6,18 @@
 
 This is an application that displays animals that live at Moana's Island zoo. It allows users to add animals to the inventory, edit their details, view and filter the list of animals.
 
-<img src="https://raw.githubusercontent.com/kristendynamite/local-zoo/master/img/df-screenshot.png">
+<img src="https://raw.githubusercontent.com/kristendynamite/local-zoo/master/resources/images/screenshot.png">
 
 ### Specs
 * User submits an animal:
-  * Animal: Cheetah
-  * Name: Chester
-  * Age: 5 years old
-  * Diet: carnivore
-  * Location: African exhibit
-  * Sex: Female
-  * Likes: Rodents
-  * Dislikes: Children
+  * Animal: Rooster
+  * Name: Heihei
+  * Age: 3 years old
+  * Diet: anything
+  * Location: Canoe
+  * Sex: Male
+  * Likes: Eating inedible objects
+  * Dislikes: Rocky waters
 
 * User has ability to edit the name, age, or caretakers for an animal by clicking edit button next to animal
 * User is able to view all animals in a nice list
@@ -26,7 +26,7 @@ This is an application that displays animals that live at Moana's Island zoo. It
 ### Setup/Installation Requirements
 
 * Open CMD/Terminal
-* git clone `https://github.com/kristendynamite/Doctor-Lookup.git`
+* git clone `https://github.com/kristendynamite/local-zoo.git`
 * Run 'npm install' in your chosen terminal application
 * Run 'bower install' in your chosen terminal application
 * Run 'gulp serve' in your chosen terminal application, then wait for your browser to be opened to the appropriate page.
