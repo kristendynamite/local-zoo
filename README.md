@@ -44,6 +44,10 @@ This is an application that displays animals that live at Moana's Island zoo. It
 * CSS
 * HTML
 
+### Features I'd like to add in the future
+
+* Ability for users to add images of animals they submit
+
 
 **Other Technologies:**
 
