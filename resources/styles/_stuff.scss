@@ -1,5 +1,6 @@
 body {
   font-family: 'Patrick Hand', cursive;
+  font-size: 2em;
 }
 
 .header {
@@ -9,7 +10,7 @@ body {
   justify-content: center;
   align-content: space-between;
   align-items: flex-end;
-  background: white;
+
   margin-bottom: 10px;
   width: 100%;
   height: 200px;
@@ -30,6 +31,8 @@ body {
     text-align: center;
     font-family: 'Merienda One', cursive;
     font-size: 65px;
+    padding-left: 15px;
+    padding-right: 20px;
     background: linear-gradient(to bottom, darken(turquoise, 10%), turquoise, paleturquoise, skyblue, darkblue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,7 +51,7 @@ select {
 .animal-list {
   background: beige;
   border: 1px solid turquoise;
-  padding: 5px;
+  padding: 10px;
 }
 
 button {
@@ -56,8 +59,7 @@ button {
   background: turquoise;
   font-size: 1.5em;
   border-radius: 5px;
-  margin: 0 auto;
-  margin-bottom: 5px;
+  margin: 10px auto;
 }
 
 .new-animal {
@@ -84,10 +86,16 @@ ul {
   li {
     list-style-type: none;
     width: 30%;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     background: paleturquoise;
     margin-top: 30px;
     margin-bottom: 30px;
+    img {
+      width: 50px;
+    }
+  }
+  button {
+    margin-top: 20px;
   }
 }

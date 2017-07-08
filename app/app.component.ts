@@ -26,9 +26,9 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-    new Animal('Hei Hei', 'Rooster', 6, 'rocks', 'Canoe', 2, 'male', 'swallowing inedible objects', 'being lost at sea'),
-    new Animal('Pua', 'Pig', 2, 'carrots and apples', 'Farm', 2, 'male', 'coconut water and sailing', 'rough seas and being away from Moana'),
-    new Animal('Lola', 'Elephant', 1, 'peanuts', 'Exotic exhibit', 2, 'female', 'painting and baths', 'loud noises')
+    new Animal('Hei Hei', 'Rooster', 6, 'rocks', 'Canoe', 2, 'male', 'swallowing inedible objects', 'being lost at sea', './resources/images/Heihei.png'),
+    new Animal('Pua', 'Pig', 2, 'carrots and apples', 'Farm', 2, 'male', 'coconut water and sailing', 'rough seas and being away from Moana', './resources/images/Pua.png'),
+    new Animal('Lola', 'Elephant', 1, 'peanuts', 'Exotic exhibit', 2, 'female', 'painting and baths', 'loud noises', './resources/images/Moana.png')
   ];
 
   editAnimal(clickedAnimal) {

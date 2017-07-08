@@ -11,7 +11,7 @@ import { Animal } from './animal.model';
         <option value="oldAnimals">Animals over 2 Years Old</option>
       </select>
       <ul>
-        <li (click)="isAge(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge"> {{currentAnimal.name}} the {{currentAnimal.animal}} <br>Age: {{currentAnimal.age}} <br>Diet: {{currentAnimal.diet}} <br>Location: {{currentAnimal.location}} <br>Caretakers: {{currentAnimal.caretakers}} <br>Gender: {{currentAnimal.sex}} <br>Likes: {{currentAnimal.likes}} <br>Disklikes: {{currentAnimal.dislikes}} <br> {{currentAnimal.image}}
+        <li (click)="isAge(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | age:filterByAge"> {{currentAnimal.name}} the {{currentAnimal.animal}} <br>Age: {{currentAnimal.age}} <br>Diet: {{currentAnimal.diet}} <br>Location: {{currentAnimal.location}} <br>Caretakers: {{currentAnimal.caretakers}} <br>Gender: {{currentAnimal.sex}} <br>Likes: {{currentAnimal.likes}} <br>Disklikes: {{currentAnimal.dislikes}} <br>
         <button (click)="editButtonHasBeenClicked(currentAnimal)">Edit!</button>
         </li>
       </ul>
